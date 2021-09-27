@@ -1,0 +1,6 @@
+#
+#Wed Jul 28 14:55:51 EDT 2021
+com.test.bk.inventory.controller.InventoryController=org.springframework.stereotype.Component
+com.test.bk.inventory.InventoryserviceApplication=org.springframework.stereotype.Component,org.springframework.boot.SpringBootConfiguration
+com.test.bk.inventory.entity.Item=javax.persistence.Entity,javax.persistence.Table
+com.test.bk.inventory.repository.ItemRepository=org.springframework.data.repository.Repository
