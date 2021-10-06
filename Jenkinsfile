@@ -9,7 +9,7 @@ pipeline {
         	steps {
         	echo 'Executing gradle'
 
-        	 gradle clean build
+        	 bat 'gradlew clean build'
 
 
             }
