@@ -13,5 +13,13 @@ pipeline {
             }
             }
         }
+
+        stage ("deploy") {
+                	steps {
+                	echo 'Extracting jar'
+                	copy /build/libs/*.jar c://my_test_app
+
+                    }
+                }
     }
 }
