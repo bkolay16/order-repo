@@ -9,7 +9,7 @@ pipeline {
         	steps {
         	echo 'Executing gradle'
 
-        	sh './gradlew clean build'
+        	 gradle clean build
 
 
             }
