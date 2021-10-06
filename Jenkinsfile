@@ -7,17 +7,17 @@ pipeline {
     stages {
 		stage ("build") {
         	steps {
-        	echo 'Executing gradle'
-            withGradle(){
-        	 bat 'gradlew clean build'
-            }
-            }
-        }
+        	        echo 'Executing gradle'
+                    withGradle(){
+                     bat 'gradlew clean build'
+                    }
+                   }
+             }
 
         stage ("deploy") {
-                	steps {
+                steps {
                 	echo 'Extracting jar'
-                	copy /build/libs/*.jar c://my_test_app
+                	bat 'copy /build/libs/*.jar c://my_test_app/'
 
                     }
                 }
