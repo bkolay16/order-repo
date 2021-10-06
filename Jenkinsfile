@@ -10,7 +10,6 @@ pipeline {
         	echo 'Executing gradle'
             withGradle(){
         	 bat 'gradlew clean build'
-
             }
             }
         }
