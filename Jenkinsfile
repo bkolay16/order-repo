@@ -4,7 +4,11 @@ pipeline {
     stages {
 		stage ("build") {
         	steps {
-            	gradlew clean build
+        	echo 'Executing gradle'
+        	withGradle(){
+        	gradlew.bat clean build
+        	}
+
             }
         }
     }
