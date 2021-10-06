@@ -6,7 +6,7 @@ pipeline {
         	steps {
         	echo 'Executing gradle'
         	withGradle(){
-        	gradlew.bat clean build
+        	sh './gradlew clean build'
         	}
 
             }
