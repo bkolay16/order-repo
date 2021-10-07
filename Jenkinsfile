@@ -25,7 +25,7 @@ pipeline {
 	    stage ("run") {
                 steps {
                 	echo 'Starting application'
-                	bat 'java -jar c:\\my_test_app\\inventoryservice-0.0.1-SNAPSHOT.jar'
+                	
 
                     }
                 }
