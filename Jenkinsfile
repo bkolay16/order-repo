@@ -16,8 +16,16 @@ pipeline {
 
         stage ("deploy") {
                 steps {
-                	echo 'Extracting jar'
+                	echo 'Deploying Jar'
                 	bat 'copy build\\libs\\inventoryservice-0.0.1-SNAPSHOT.jar c:\\my_test_app\\'
+
+                    }
+                }
+	    
+	    stage ("run") {
+                steps {
+                	echo 'Starting application'
+                	bat 'java -jar c:\\my_test_app\\inventoryservice-0.0.1-SNAPSHOT.jar'
 
                     }
                 }
