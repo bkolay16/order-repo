@@ -17,7 +17,7 @@ pipeline {
         stage ("deploy") {
                 steps {
                 	echo 'Extracting jar'
-			bat 'cd \\build\\libs'
+			bat 'cd build\\libs'
                 	bat 'copy inventoryservice-0.0.1-SNAPSHOT.jar c:\\my_test_app\\'
 
                     }
