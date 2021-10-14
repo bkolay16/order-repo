@@ -24,7 +24,7 @@ pipeline {
 	    
 	    stage ("run") {
                 steps {
-                	echo 'Starting application'
+                	echo 'Starting application ...'
                 	
 
                     }
